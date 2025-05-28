@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contato - Blog da Karen</title>
+  <link rel="stylesheet" href="contato.css">
+</head>
+
+</head>
+<body>
+
+  <h1>Contato 🐻</h1>
+  <h2>Fale comigo! Adoro receber mensagens 💖</h2>
+
+  <div class="nav-links">
+    <a href="index.html">Principal</a>
+    <a href="inicio.html">Início</a>
+    <a href="sobre.html">Sobre</a>
+    <a href="postagem.html">Postagens</a>
+  </div>
+
+  <a href="https://instagram.com/karen_blog" target="_blank" rel="noopener noreferrer" class="instagram-link">
+    <span>🐻</span> Meu instagram
+  </a>
+
+  <form id="contactForm">
+    <label for="name">Nome</label>
+    <input type="text" id="name" name="name" placeholder="Seu nome" required />
+
+    <label for="email">E-mail</label>
+    <input type="email" id="email" name="email" placeholder="seu@email.com" required />
+
+    <label class="message-label" for="message">Me envie uma mensagem</label>
+    <textarea id="message" name="message" rows="5" placeholder="Escreva sua mensagem..." required></textarea>
+
+    <button type="submit">Enviar 💌</button>
+  </form>
+
+  <div class="success-message" id="successMessage">Mensagem enviada com sucesso! Obrigada por entrar em contato 💖</div>
+
+  <script>
+    const form = document.getElementById('contactForm');
+    const successMessage = document.getElementById('successMessage');
+
+    form.addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      // Simula envio de mensagem
+      successMessage.style.display = 'block';
+      form.reset();
+
+      setTimeout(() => {
+        successMessage.style.display = 'none';
+      }, 5000);
+    });
+  </script>
+
+</body>
+</html>

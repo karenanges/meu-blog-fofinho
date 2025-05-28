@@ -1,0 +1,105 @@
+body {
+      margin: 0;
+      padding: 40px 20px;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background: linear-gradient(135deg, #ffe0f5, #ffcce0);
+      color: #c13d75;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .nav-links {
+      margin-top: 0,5px;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
+      background-color: #ffaad0;
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 20px;
+      font-weight: bold;
+      transition: 0.2s ease;
+    }
+
+    .nav-links a:hover {
+      background-color: #ff5d92;
+      transform: scale(1.1);
+    }
+   
+
+  
+    h1 {
+      font-size: 2.8rem;
+      margin-bottom: 40px;
+      user-select: none;
+      text-align: center;
+      max-width: 960px;
+      width: 100%;
+    }
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+      max-width: 960px;
+      width: 100%;
+    }
+
+    .card {
+  width: 200px;
+  height: 200px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(255, 105, 180, 0.2);
+  padding: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #c13d75;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  user-select: none;
+  margin: 0px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  
+  
+    
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 30px rgba(255, 105, 180, 0.4);
+    }
+
+    .card-emoji {
+      font-size: 4.5rem;
+      margin-bottom: 15px;
+    }
+
+    .card-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    .card-date {
+      font-style: italic;
+      color: #d65b8a;
+      font-size: 1rem;
+      text-align: center;
+    }
+
+    .media {max-width: 600px}
+  

@@ -1,0 +1,140 @@
+
+  body {
+      background: linear-gradient(135deg, #ffe0f5, #ffcce0);
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      color: #c13d75;
+      margin: 0;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.8em;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 2em;
+      color: #ff6a9f;
+      margin-bottom: 40px;
+    }
+
+    .nav-links {
+      margin-bottom: 40px;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
+      background-color: #ffaad0;
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 20px;
+      font-weight: bold;
+      transition: 0.2s ease;
+    }
+
+    .nav-links a:hover {
+      background-color: #ff5d92;
+      transform: scale(1.1);
+    }
+
+    .instagram-link {
+      font-size: 1.6em;
+      margin-bottom: 40px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: #c13d75;
+      text-decoration: none;
+      font-weight: bold;
+      border: 2px solid #ffaad0;
+      padding: 10px 20px;
+      border-radius: 30px;
+      transition: 0.3s ease;
+    }
+
+    .instagram-link:hover {
+      background-color: #ffaad0;
+      color: white;
+      transform: scale(1.05);
+    }
+
+    form {
+      background-color: #fff0f7;
+      padding: 30px 25px;
+      max-width: 450px;
+      margin: 0 auto;
+      border-radius: 25px;
+      box-shadow: 0 6px 18px rgba(255, 105, 180, 0.3);
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    label {
+      font-weight: bold;
+      color: #d63c7b;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 12px 15px;
+      border: 2px solid #ffaad0;
+      border-radius: 15px;
+      font-size: 1em;
+      font-family: inherit;
+      resize: vertical;
+      transition: border-color 0.3s ease;
+      box-sizing: border-box;
+    }
+
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    textarea:focus {
+      border-color: #ff5d92;
+      outline: none;
+    }
+
+    .message-label {
+      margin-top: 10px;
+      font-weight: bold;
+      color: #d63c7b;
+      font-size: 1.1em;
+    }
+
+    button {
+      background-color: #ffaad0;
+      color: white;
+      border: none;
+      padding: 12px 0;
+      border-radius: 30px;
+      font-size: 1.2em;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    button:hover {
+      background-color: #ff5d92;
+    }
+
+    .success-message {
+      display: none;
+      text-align: center;
+      margin-top: 20px;
+      font-weight: bold;
+      color: #4caf50;
+      font-size: 1.2em;
+    }
+
+
+
