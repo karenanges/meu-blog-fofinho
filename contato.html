@@ -24,38 +24,25 @@
     <span>🐻</span> Meu instagram
   </a>
 
-  <form action="https://formspree.io/f/mwpognzr"
-  method="POST">
-    <label for="name">Nome</label>
-    <input type="text" id="name" name="name" placeholder="Seu nome" required />
+  <form action="https://formspree.io/f/mwpognzr" method="POST">
+  <!-- Redireciona para obrigado.html após o envio -->
+  <input type="hidden" name="_redirect" value="https://karenanges.github.io/meu-blog-fofinho/obrigada.html">
 
-    <label for="email">E-mail</label>
-    <input type="email" id="email" name="email" placeholder="seu@email.com" required />
+  <label for="name">Nome</label>
+  <input type="text" id="name" name="name" required>
 
-    <label class="message-label" for="message">Me envie uma mensagem</label>
-    <textarea id="message" name="message" rows="5" placeholder="Escreva sua mensagem..." required></textarea>
+  <label for="email">Email</label>
+  <input type="email" id="email" name="email" required>
 
-    <button type="submit">Enviar 💌</button>
-  </form>
+  <label for="message">Mensagem</label>
+  <textarea id="message" name="message" required></textarea>
+
+  <button type="submit">Enviar 💌</button>
+</form>
+
 
   <div class="success-message" id="successMessage">Mensagem enviada com sucesso! Obrigada por entrar em contato 💖</div>
 
-  <script>
-    const form = document.getElementById('contactForm');
-    const successMessage = document.getElementById('successMessage');
-
-    form.addEventListener('submit', function(event) {
-      event.preventDefault();
-
-      // Simula envio de mensagem
-      successMessage.style.display = 'block';
-      form.reset();
-
-      setTimeout(() => {
-        successMessage.style.display = 'none';
-      }, 5000);
-    });
-  </script>
 
 </body>
 </html>
