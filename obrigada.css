@@ -1,0 +1,39 @@
+body {
+  background: linear-gradient(135deg, #ffe6f0, #ffcce0);
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  text-align: center;
+  padding: 60px 20px;
+  color: #d14789;
+  margin: 0;
+}
+
+h1 {
+  font-size: 2.8em;
+  margin-bottom: 20px;
+  color: #ff4d7e;
+}
+
+p {
+  font-size: 1.3em;
+  margin: 15px 0;
+}
+
+.btn-voltar {
+  margin-top: 40px;
+}
+
+.btn-voltar a {
+  background-color: #ffaad0;
+  color: white;
+  text-decoration: none;
+  padding: 15px 30px;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 1.1em;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-voltar a:hover {
+  background-color: #ff5d92;
+  transform: scale(1.05);
+}
