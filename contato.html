@@ -4,9 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Contato - Blog da Karen</title>
-  <link rel="stylesheet" href="contato.css">
-</head>
-
+  <link rel="stylesheet" href="contato.css" />
 </head>
 <body>
 
@@ -24,28 +22,25 @@
     <span>🐻</span> Meu instagram
   </a>
 
-<form action="https://formsubmit.co/kangelytha@gmail.com" method="POST">
-  <!-- Redireciona para página de obrigado após envio -->
-  <input type="hidden" name="_next" value="https://karenanges.github.io/meu-blog-fofinho/index.html" />
-  <!-- Remove o captcha -->
-  <input type="hidden" name="_captcha" value="false" />
+  <form action="https://formsubmit.co/kangelytha@gmail.com" method="POST">
+    
+    <label for="name">Nome</label>
+    <input type="text" id="name" name="name" required />
 
-  <label for="name">Nome</label>
-  <input type="text" id="name" name="name" required>
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required />
 
-  <label for="email">E-mail</label>
-  <input type="email" id="email" name="email" required>
+    <label for="message">Mensagem</label>
+    <textarea id="message" name="message" required></textarea>
 
-  <label for="message">Mensagem</label>
-  <textarea id="message" name="message" required></textarea>
+    <!-- Redireciona para a sua página de obrigado -->
+    <input type="hidden" name="_next" value="https://karenanges.github.io/meu-blog-fofinho/obrigada.html" />
 
-  <button type="submit">Enviar 💌</button>
-</form>
+    <!-- Opcional: desativa captcha -->
+    <input type="hidden" name="_captcha" value="false" />
 
-
-
-  <div class="success-message" id="successMessage">Mensagem enviada com sucesso! Obrigada por entrar em contato 💖</div>
-
+    <button type="submit">Enviar 💌</button>
+  </form>
 
 </body>
 </html>
